@@ -1,0 +1,136 @@
+:root {
+  --icon-col: #7f8c8d;
+  --icon-hov-col:#f39c12;
+  --5rate: #26b539;
+  --4rate: #87d44a;
+  --3rate: #ffae38;
+  --2rate: #fa6837;
+  --1rate: #eb2228;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f5fa;
+}
+
+h1{
+    margin: 10px 0 0 10px;
+    color: #d35400;
+}
+
+.star {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.fa-star{
+    font-size: 25px;
+}
+
+i {
+  cursor: pointer;
+  color: var(--icon-col);
+  font-size: 32px;
+  translate: transform 2s;    
+}
+
+.star .fas:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+.star {
+  display: flex;
+}
+
+.fas-1 i:hover, .fas-2 i:hover, .fas-3 i:hover, .fas-4 i:hover, .fas-5 i:hover {
+  color: var(--icon-hov-col);
+}
+
+div > div > i:nth-child(2) {
+  position: absolute;
+  top: 45px;
+}
+
+.fas-1 {
+  position: relative;
+  margin-left: 40px;
+}
+
+.fas-em-1 {
+  position: absolute;
+  display: none;
+  color: var(--1rate);
+}
+
+.fas-1:hover .fas-em-1 {
+  display: block;
+}
+
+.fas-2 {
+  position: relative;
+  margin-left: 40px;
+}
+
+.fas-em-2 {
+  position: absolute;
+  display: none;
+  color: var(--2rate);
+}
+
+.fas-2:hover .fas-em-2 {
+  display: block;
+}
+
+.fas-3 {
+    position: relative;
+    margin-left: 40px;
+  }
+
+.fas-em-3 {
+  position: absolute;
+  display: none;
+  color: var(--3rate);
+}
+
+.fas-3:hover .fas-em-3 {
+  display: block;
+}
+
+.fas-4 {
+    position: relative;
+    margin-left: 40px;
+  }
+
+.fas-em-4 {
+  position: absolute;
+  display: none;
+  color: var(--4rate);
+}
+
+.fas-4:hover .fas-em-4 {
+  display: block;
+}
+
+.fas-5 {
+    position: relative;
+    margin-left: 40px;
+  }
+
+.fas-em-5 {
+  position: absolute;
+  display: none;
+  color: var(--5rate);
+}
+
+.fas-5:hover .fas-em-5 {
+  display: block;
+}
